@@ -31,3 +31,7 @@ resource "aws_instance" "example" {
     key_name = "var.key_name_value"
   
 }
+
+resource "s3" "bucket" {
+  
+}
