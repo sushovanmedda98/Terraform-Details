@@ -1,5 +1,7 @@
 The file provisioner is used to copy files or directories from the local machine to a remote machine. This is useful for deploying configuration files, scripts, or other assets to a provisioned instance.
 
+
+
 resource "aws_instance" "example" {
   ami           = "ami-0c55b159cbfafe1f0"
   instance_type = "t2.micro"
@@ -19,6 +21,8 @@ provisioner "file" {
 remote-exec Provisioner:
 
 The remote-exec provisioner is used to run scripts or commands on a remote machine over SSH or WinRM connections. It's often used to configure or install software on provisioned instances.
+
+
 
 
 resource "aws_instance" "example" {
